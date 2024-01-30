@@ -1,4 +1,7 @@
 <?php 
+
+// main connection file for php to connect the sql server will include it in other php files 
+
     $servername = "localhost";
     $username = "root";
     $password = "";

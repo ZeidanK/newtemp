@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- this page will show each client the list of his guest and the details, to identify the client we use $_GET['id'] that will give us the clients slug in the url -->
 <html lang="en">  
   <head>
     <?php 
@@ -52,6 +52,7 @@ echo "$row[fullname]" ;
         <th>EMAIL</th>
         <th>OPENLINK?</th>
         <th>Attending?</th>
+        <th>msgfromguest</th>
         
        <!-- <th>ACTIONS</th> -->
       </tr>
@@ -85,6 +86,7 @@ echo "$row[fullname]" ;
         <td>$row[email]</td>
         <td>$row[visitcount]</td>
         <td>$printmsg</td>
+        <td>$row[msgfromguest]</td>
         
         
       </tr>

@@ -1,4 +1,4 @@
-<?php
+<?php  //old template out dated might need some shit from here so keeping it for now
 if(isset($_GET['client'])&&isset($_GET['guest'])){
 
   include "connection.php";
@@ -130,7 +130,17 @@ echo "$Guestrow[fullname]" ;
                     } 
     ?> 
   
-   
+    <form method="post"> 
+    <section class="u-clearfix u-palette-2-light-2 u-section-4" id="sec-807b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <input type="submit" name="button1"
+        class="u-border-2 u-border-custom-color-4 u-border-hover-custom-color-4 u-btn u-btn-round u-button-style u-hover-custom-color-4 u-none u-radius u-text-hover-black u-text-palette-3-dark-3 u-btn-1"value="الاعتذار من الحضور" /> 
+          
+        <input type="submit" name="button2"
+                class="u-border-2 u-border-active-custom-color-5 u-border-custom-color-5 u-border-hover-custom-color-5 u-btn u-btn-round u-button-style u-hover-custom-color-5 u-none u-radius u-text-hover-black u-text-palette-3-dark-3 u-btn-2" value="تاكيد الحضور" /> 
+                </div>
+    </section>
+            </form> 
 </body> 
   
 </html> 

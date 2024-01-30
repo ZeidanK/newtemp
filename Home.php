@@ -197,19 +197,42 @@ echo "$Guestrow[fullname]" ;
                     <div class="u-container-layout u-valign-top u-container-layout-3">
                       <h2 class="u-align-right u-text u-text-grey-70 u-text-5">اضافة رسالة </h2>
                       <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                        <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form-2">
+                        <form method="post" action="php/guestmsg.php?guest=<?php echo "$GuestSlug" ?>&client=<?php echo "$ClientSlug" ?>&answer=0"  class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form-2">
                           <div class="u-form-group u-form-message u-label-none">
                             <label for="message-da97" class="u-label">Message</label>
                             <textarea placeholder="اكتب هنا" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required=""></textarea>
                           </div>
                           <div class="u-align-right u-form-group u-form-submit">
-                            <a href="#" class="u-active-palette-1-light-1 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-light-1 u-btn-1">ارسال </a>
+                            <a href="php/guestmsg.php?guest=<?php echo "$GuestSlug" ?>&client=<?php echo "$ClientSlug" ?>" class="u-active-palette-1-light-1 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-light-1 u-btn-1">ارسال </a>
                             <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
                           <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                           <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                           <input type="hidden" value="" name="recaptchaResponse">
                           <input type="hidden" name="formServices" value="dcfdfb5a-6c42-8212-d990-bcf56f7bdd1b">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-3">
+                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                      <h2 class="u-align-right u-text u-text-grey-70 u-text-5">اضافة رسالة </h2>
+                      <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+                        <form method="post" action="php/guestmsg.php?guest=<?php echo "$GuestSlug" ?>&client=<?php echo "$ClientSlug" ?>&answer=0"  class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px"  name="form-2">
+                          
+                            <label for="message-da97">Message</label>
+                            <textarea placeholder="اكتب هنا" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required=""></textarea>
+                          
+                          
+                            <a href="php/guestmsg.php?guest=<?php echo "$GuestSlug" ?>&client=<?php echo "$ClientSlug" ?>" class="u-active-palette-1-light-1 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-light-1 u-btn-1">ارسال </a>
+                            <input type="submit" value="submit" class="u-form-control-hidden">
+                         
+                          
+                          
                         </form>
                       </div>
                     </div>
